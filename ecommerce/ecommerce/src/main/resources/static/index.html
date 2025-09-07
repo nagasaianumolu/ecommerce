@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My E-Commerce</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">MyShop</div>
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search products..." />
+        <button onclick="searchProducts()">Search</button>
+      </div>
+      <div class="nav-links">
+        <a href="#">Login</a>
+        <a href="#">Cart (0)</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Welcome to My E-Commerce</h1>
+    <button onclick="loadProducts()">Load Products</button>
+
+    <div id="products" class="products-grid">
+      <!-- Products will be inserted here -->
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 MyShop. All rights reserved.
+  </footer>
+</body>
+</html>
